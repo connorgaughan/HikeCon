@@ -7,21 +7,21 @@
 		</article><!-- .mission -->
 		<div class="events">
 		
-			<section class="event">
-				<span class="folio">Event #1</span>
+			<section class="event sanfran">
+				<p class="folio">Event #1</p>
 				<h3>san francisco</h3>
-				<span class="folio">Date</span>
+				<p class="folio">Date</p>
 				<h4>Apr 04 &amp; 05, 2014</h4>
-				<span class="folio">Location</span>
+				<p class="folio">Location</p>
 				<h5>Adobe</h5>
 			</section>
 			
-			<section class="event">
-				<span class="folio">Event #2</span>
+			<section class="event chi">
+				<p class="folio">Event #2</p>
 				<h3>chicago</h3>
-				<span class="folio">Date</span>
+				<p class="folio">Date</p>
 				<h4>Oct 17 &amp; 18, 2014</h4>
-				<span class="folio">Location</span>
+				<p class="folio">Location</p>
 				<h5>TBD</h5>
 			</section>
 			
