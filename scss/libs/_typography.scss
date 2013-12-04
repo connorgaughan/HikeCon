@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------------------------------  Font Sizing - 16px base
+$base-font-size						: 16px;
+$base-line-height					: 6px;
+$round-to-nearest-half-line			: false;
+
+//-------------------------------------------------------------------------------------------------  Base Typography
+body{@include adjust-font-size-to($base-font-size, 4); color:$primary;}
+
+//-------------------------------------------------------------------------------------------------  Headlines
+h1 { 
+	@include adjust-font-size-to(64px, 12);
+	margin: 0 0 rhythm(1, 64px) 0;
+} 
+
+h2 { 
+	@include adjust-font-size-to(36px, 7);
+	margin: 0 0 rhythm(3, 22px) 0;
+} 
+
+h3 { 
+	@include adjust-font-size-to(16px, 3);
+	margin: rhythm(3, 16px) 0 rhythm(2, 16px) 0;
+} 
+
+h4 { 
+	@include adjust-font-size-to(18px, 4);
+	margin: rhythm(5, 18px) 0 rhythm(2, 18px) 0;
+} 
+
+h5{
+	@include adjust-font-size-to(18px, 4);
+	margin: rhythm(3, 18px) 0 rhythm(3, 18px) 0;
+}
+
+
+//-------------------------------------------------------------------------------------------------  Functions for px to em conversions
+@function emify($target, $context) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+
+//-------------------------------------------------------------------------------------------------  Make px to ems using base-font-size 
+@function em-font($target, $context: $base-font-size) {
+   @return emify($target, $context);
+}
+
+
+//-------------------------------------------------------------------------------------------------  Make px to ems using base-line-height 
+@function em-base($target, $context: $base-line-height) {
+   @return emify($target, $context);
+}
