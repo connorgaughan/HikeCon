@@ -3,8 +3,18 @@ $base-font-size						: 16px;
 $base-line-height					: 6px;
 $round-to-nearest-half-line			: false;
 
+
+//-------------------------------------------------------------------------------------------------  Color Settings
+$primary							: #414042;
+$secondary							: #ff9797;
+$tertiary							: #ffffff;
+$highlight							: red;
+
+
 //-------------------------------------------------------------------------------------------------  Base Typography
-body{@include adjust-font-size-to($base-font-size, 4); color:$primary;}
+@import url("//hello.myfonts.net/count/2938ba");
+@font-face {font-family: 'ITCAvantGardeStd-Bold';src: url('../webfonts/2938BA_0_0.eot');src: url('../webfonts/2938BA_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2938BA_0_0.woff') format('woff'),url('../webfonts/2938BA_0_0.ttf') format('truetype');}
+
 
 //-------------------------------------------------------------------------------------------------  Headlines
 h1 { 

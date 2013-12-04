@@ -4,25 +4,21 @@
 @import "compass/utilities";
 @import "libs/reset";
 @import "libs/grid";
+@import "libs/typography"; 
 
 
 //-------------------------------------------------------------------------------------------------  General Styles
-body {width: 100%; @extend .clearfix;}
+body {width: 100%; @extend .clearfix; font-family: 'ITCAvantGardeStd-Bold', helvetica, arial, sans-serif; @include adjust-font-size-to($base-font-size); color:$primary;}
 .clearfix{*zoom:1; &:before, &:after {content:""; display:table;} &:after {clear:both;}}
 .container {@extend .clearfix; margin: 0 auto; max-width: 1200px; padding:0 20px;}
 
-//-------------------------------------------------------------------------------------------------  Color Settings
-$primary							: #414042;
-$secondary							: #ff9797;
-$tertiary							: #ffffff;
-$highlight							: red;
-@import "libs/typography"; 	
 
 //-------------------------------------------------------------------------------------------------  Layout
 
 
 //-------------------------------------------------------------------------------------------------  Print styles
 @media print {body {font-size: percentage(10 / 16);@include adjust-leading-to(2);}}
+
 
 //-------------------------------------------------------------------------------------------------  IOS specifics 
 @media screen and (max-width: 769px) {-webkit-text-size-adjust:none;}
