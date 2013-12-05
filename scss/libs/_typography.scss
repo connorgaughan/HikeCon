@@ -8,7 +8,7 @@ $round-to-nearest-half-line			: false;
 $primary							: #414042;
 $secondary							: #ff9797;
 $tertiary							: #ffffff;
-$highlight							: #ee4141;
+$highlight							: #ff3e3e;
 
 
 //-------------------------------------------------------------------------------------------------  Base Typography
@@ -31,10 +31,19 @@ h3, h4, h5{
 }
 
 h3 { 
-	@include adjust-font-size-to(60px);
+	@include adjust-font-size-to(64px);
 	margin:0;
-	padding: 0 0 rhythm(8, 60px) 0;
+	padding: 0 0 rhythm(8, 64px) 0;
 } 
+
+.sanfran h3:after{
+	content: "";
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin: 0 0 0 .25em;
+	background: url("../images/forward-slash_test.png") top left no-repeat;
+}
 
 h4, h5 { 
 	@include adjust-font-size-to(24px);

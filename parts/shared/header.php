@@ -1,5 +1,7 @@
 <header>
 	<div class="container">
-		<h1 class="site-title">HikeCon</h1>
+		<div class="site-title">
+			<h1 class="hikecon">HikeCon</h1>
+		</div>
 	</div>
 </header>

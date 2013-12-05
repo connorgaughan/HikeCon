@@ -91,7 +91,7 @@ textarea {
 /* line 17, ../scss/libs/_typography.scss */
 a {
   text-decoration: none;
-  color: #be3434;
+  color: #cc3131;
 }
 
 /* line 21, ../scss/libs/_typography.scss */
@@ -111,13 +111,23 @@ h3, h4, h5 {
 
 /* line 33, ../scss/libs/_typography.scss */
 h3 {
-  font-size: 3.75em;
-  line-height: 1.1em;
+  font-size: 4em;
+  line-height: 1.125em;
   margin: 0;
-  padding: 0 0 0.8em 0;
+  padding: 0 0 0.75em 0;
 }
 
 /* line 39, ../scss/libs/_typography.scss */
+.sanfran h3:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 0 0 0 .25em;
+  background: url("../images/forward-slash_test.png") top left no-repeat;
+}
+
+/* line 48, ../scss/libs/_typography.scss */
 h4, h5 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -125,7 +135,7 @@ h4, h5 {
   padding: 0 0 1.5em 0;
 }
 
-/* line 47, ../scss/libs/_typography.scss */
+/* line 56, ../scss/libs/_typography.scss */
 .folio {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -142,7 +152,7 @@ body {
   line-height: 1.5em;
   color: #414042;
   width: 100%;
-  background: #ee4141;
+  background: #ff3e3e;
   font-family: 'ITCAvantGardeStd-Bold', helvetica, arial, sans-serif;
 }
 
@@ -180,8 +190,8 @@ body {
   margin: 0 0.83333%;
   margin-left: 17.5%;
   padding-top: 5.625em;
-  padding-bottom: 3.75em;
-  background: #ee4141;
+  padding-bottom: 5.625em;
+  background: #ff3e3e;
   z-index: 1000;
   position: relative;
 }
@@ -194,10 +204,18 @@ body {
   position: absolute;
   left: -50px;
   top: 0;
-  background: #ee4141;
+  background: #ff3e3e;
+}
+/* line 49, ../scss/style.scss */
+.site-title .hikecon {
+  height: 70px;
+  width: 208px;
+  display: block;
+  background: url("../images/logo_test.png") top left no-repeat;
+  text-indent: -9999px;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .mission {
   display: inline;
   float: left;
@@ -206,19 +224,19 @@ body {
   padding-right: 2.5em;
   letter-spacing: -0.02em;
 }
-/* line 55, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 .mission:before {
   content: "";
   width: 100%;
   height: 75px;
   right: 50%;
-  top: -100px;
+  top: -165px;
   background: url("../images/squiggle_test.png") top right repeat-x;
   position: absolute;
   z-index: 1;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .event {
   display: inline;
   float: left;
@@ -227,7 +245,7 @@ body {
   padding-bottom: 3.75em;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .ticket-announcement, .logos {
   display: inline;
   float: left;
@@ -236,18 +254,62 @@ body {
   margin-left: 17.5%;
 }
 
-/* line 77, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
+.ticket-announcement {
+  color: white;
+}
+/* line 86, ../scss/style.scss */
+.ticket-announcement input {
+  background: #ff3e3e;
+  border: 1px solid white;
+  padding: .5em;
+  color: white;
+}
+/* line 92, ../scss/style.scss */
+.ticket-announcement input[type="submit"] {
+  background: #cc3131;
+  border: none;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  padding: .75em;
+  margin: -2px 0 0 0;
+}
+/* line 102, ../scss/style.scss */
+.ticket-announcement ::-webkit-input-placeholder {
+  color: #ff9797;
+}
+/* line 103, ../scss/style.scss */
+.ticket-announcement :-moz-placeholder {
+  color: #ff9797;
+}
+/* line 104, ../scss/style.scss */
+.ticket-announcement ::-moz-placeholder {
+  color: #ff9797;
+}
+/* line 105, ../scss/style.scss */
+.ticket-announcement :-ms-input-placeholder {
+  color: #ff9797;
+}
+
+/* line 108, ../scss/style.scss */
 footer {
   position: fixed;
   bottom: 25px;
   width: 100%;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .logos {
   list-style-type: none;
 }
-/* line 85, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .logos li {
   display: inline-block;
   *display: inline;
@@ -255,7 +317,7 @@ footer {
 }
 
 @media print {
-  /* line 93, ../scss/style.scss */
+  /* line 124, ../scss/style.scss */
   body {
     font-size: 62.5%;
     line-height: 0.75em;
