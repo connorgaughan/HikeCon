@@ -106,17 +106,18 @@ h2 {
 /* line 28, ../scss/libs/_typography.scss */
 h3, h4, h5 {
   color: #414042;
+  letter-spacing: -0.05em;
 }
 
-/* line 32, ../scss/libs/_typography.scss */
+/* line 33, ../scss/libs/_typography.scss */
 h3 {
   font-size: 3.75em;
   line-height: 1.1em;
   margin: 0;
-  padding: 0 0 1em 0;
+  padding: 0 0 0.8em 0;
 }
 
-/* line 38, ../scss/libs/_typography.scss */
+/* line 39, ../scss/libs/_typography.scss */
 h4, h5 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -124,12 +125,12 @@ h4, h5 {
   padding: 0 0 1.5em 0;
 }
 
-/* line 46, ../scss/libs/_typography.scss */
+/* line 47, ../scss/libs/_typography.scss */
 .folio {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  font-size: 0.875em;
-  line-height: 1.28571em;
+  font-size: 0.75em;
+  line-height: 1.5em;
   color: #ff9797;
   text-transform: uppercase;
   margin: 0 0 0.85714em 0;
@@ -139,28 +140,27 @@ h4, h5 {
 body {
   font-size: 1em;
   line-height: 1.5em;
-  padding-top: 7.5em;
   color: #414042;
   width: 100%;
   background: #ee4141;
   font-family: 'ITCAvantGardeStd-Bold', helvetica, arial, sans-serif;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 .clearfix, body, .container {
   *zoom: 1;
 }
-/* line 21, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 .clearfix:before, body:before, .container:before, .clearfix:after, body:after, .container:after {
   content: "";
   display: table;
 }
-/* line 21, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 .clearfix:after, body:after, .container:after {
   clear: both;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -168,37 +168,66 @@ body {
 }
 
 /* line 26, ../scss/style.scss */
-header {
-  padding-bottom: 5.625em;
+.content {
+  position: relative;
 }
-/* line 28, ../scss/style.scss */
-header .site-title {
+
+/* line 30, ../scss/style.scss */
+.site-title {
   display: inline;
   float: left;
   width: 81.66667%;
   margin: 0 0.83333%;
   margin-left: 17.5%;
+  padding-top: 5.625em;
+  padding-bottom: 3.75em;
+  background: #ee4141;
+  z-index: 1000;
+  position: relative;
+}
+/* line 39, ../scss/style.scss */
+.site-title:before {
+  content: "";
+  width: 50px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  background: #ee4141;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .mission {
   display: inline;
   float: left;
   width: 15%;
   margin: 0 0.83333%;
   padding-right: 2.5em;
+  letter-spacing: -0.02em;
+}
+/* line 55, ../scss/style.scss */
+.mission:before {
+  content: "";
+  width: 100%;
+  height: 75px;
+  right: 50%;
+  top: -100px;
+  background: url("../images/squiggle_test.png") top right repeat-x;
+  position: absolute;
+  z-index: 1;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .event {
   display: inline;
   float: left;
   width: 40%;
   margin: 0 0.83333%;
-  padding-bottom: 5.625em;
+  padding-bottom: 3.75em;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .ticket-announcement, .logos {
   display: inline;
   float: left;
@@ -207,18 +236,18 @@ header .site-title {
   margin-left: 17.5%;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 footer {
   position: fixed;
   bottom: 25px;
   width: 100%;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .logos {
   list-style-type: none;
 }
-/* line 57, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .logos li {
   display: inline-block;
   *display: inline;
@@ -226,7 +255,7 @@ footer {
 }
 
 @media print {
-  /* line 65, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body {
     font-size: 62.5%;
     line-height: 0.75em;

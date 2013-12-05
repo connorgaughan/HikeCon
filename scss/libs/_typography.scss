@@ -27,12 +27,13 @@ h2 {
 
 h3, h4, h5{
 	color:$primary;
+	letter-spacing:-.05em;
 }
 
 h3 { 
 	@include adjust-font-size-to(60px);
 	margin:0;
-	padding: 0 0 rhythm(10, 60px) 0;
+	padding: 0 0 rhythm(8, 60px) 0;
 } 
 
 h4, h5 { 
@@ -46,7 +47,7 @@ h4, h5 {
 .folio{
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight:900;
-	@include adjust-font-size-to(14px);
+	@include adjust-font-size-to(12px);
 	color:$secondary;
 	text-transform:uppercase;
 	margin: 0 0 rhythm(2, 14px) 0;
