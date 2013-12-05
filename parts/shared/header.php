@@ -1,4 +1,5 @@
 <header>
-	<div class="decoration-left"></div>
-	<h1 class="site-title">HikeCon</h1>
+	<div class="container">
+		<h1 class="site-title">HikeCon</h1>
+	</div>
 </header>

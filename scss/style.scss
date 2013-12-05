@@ -10,18 +10,56 @@
 //-------------------------------------------------------------------------------------------------  General Styles
 body {
 	@extend .clearfix;
+	@include adjust-font-size-to($base-font-size);
+	@include padding-leader(20);
+	 
+	color:$primary;
 	width: 100%;  
 	background: $highlight;
 	font-family: 'ITCAvantGardeStd-Bold', helvetica, arial, sans-serif; 
-	@include adjust-font-size-to($base-font-size); 
-	color:$primary;
 }
 .clearfix{*zoom:1; &:before, &:after {content:""; display:table;} &:after {clear:both;}}
 .container {@extend .clearfix; margin: 0 auto; max-width: 1200px; padding:0 20px;}
 
 
 //-------------------------------------------------------------------------------------------------  Layout
+header{
+	@include padding-trailer(15);
+	.site-title{
+		@include column(10);
+		@include push(2);
+	}
+}
 
+.mission{
+	@include column(2);
+	padding-right:2.5em;
+}
+
+.event{
+	@include column(5);
+	@include padding-trailer(15);
+}
+
+.ticket-announcement, .logos{
+	@include column(10);
+	@include push(2);
+}
+
+footer{
+	position:fixed;
+	bottom:25px;
+	width:100%;
+}
+
+.logos{
+	list-style-type:none;
+	li{
+		display:inline-block;
+		*display:inline;
+		zoom:1;
+	}
+}
 
 //-------------------------------------------------------------------------------------------------  Print styles
 @media print {body {font-size: percentage(10 / 16);@include adjust-leading-to(2);}}

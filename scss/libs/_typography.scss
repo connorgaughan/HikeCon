@@ -20,7 +20,7 @@ a{ text-decoration:none; color: shade($highlight, 20%); }
 //-------------------------------------------------------------------------------------------------  Headlines
 h2 {
 	color:$tertiary;
-	@include adjust-font-size-to(18px, 4);
+	@include adjust-font-size-to(18px, 4.5);
 	margin: 0;
 	padding: 0;
 } 
