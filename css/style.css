@@ -237,6 +237,18 @@ body {
 }
 
 /* line 74, ../scss/style.scss */
+.sanfran:before {
+  content: "";
+  width: 100%;
+  height: 12px;
+  right: 95%;
+  top: -65px;
+  background: #414042;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 85, ../scss/style.scss */
 .event {
   display: inline;
   float: left;
@@ -245,7 +257,7 @@ body {
   padding-bottom: 3.75em;
 }
 
-/* line 79, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .ticket-announcement, .logos {
   display: inline;
   float: left;
@@ -254,18 +266,18 @@ body {
   margin-left: 17.5%;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .ticket-announcement {
   color: white;
 }
-/* line 86, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .ticket-announcement input {
   background: #ff3e3e;
   border: 1px solid white;
   padding: .5em;
   color: white;
 }
-/* line 92, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .ticket-announcement input[type="submit"] {
   background: #cc3131;
   border: none;
@@ -281,35 +293,35 @@ body {
   padding: .75em;
   margin: -2px 0 0 0;
 }
-/* line 102, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 .ticket-announcement ::-webkit-input-placeholder {
   color: #ff9797;
 }
-/* line 103, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .ticket-announcement :-moz-placeholder {
   color: #ff9797;
 }
-/* line 104, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 .ticket-announcement ::-moz-placeholder {
   color: #ff9797;
 }
-/* line 105, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .ticket-announcement :-ms-input-placeholder {
   color: #ff9797;
 }
 
-/* line 108, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 footer {
   position: fixed;
   bottom: 25px;
   width: 100%;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 .logos {
   list-style-type: none;
 }
-/* line 116, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .logos li {
   display: inline-block;
   *display: inline;
@@ -317,7 +329,7 @@ footer {
 }
 
 @media print {
-  /* line 124, ../scss/style.scss */
+  /* line 135, ../scss/style.scss */
   body {
     font-size: 62.5%;
     line-height: 0.75em;
