@@ -1,11 +1,11 @@
 <footer>
 	<div class="container">
-		<ul class="logos">
-			<li><a href="#"><i class="logo form-and-future">Form &amp; Future</i></a></li>
-			<li><a href="#"><i class="logo the-secret-handshake">The Secret Handshake</i></a></li>
-			<li><a href="#"><i class="logo adobe">Adobe</i></a></li>
-			<li><a href="#"><i class="logo facebook">Facebook</i></a></li>
-			<li><a href="#"><i class="logo twitter">Twitter</i></a></li>
-		</ul>
+		<div class="logos">
+			<i class="logo icon-form-and-future"><a href="#">Test</a></i>
+			<i class="logo icon-the-secret-handshake"><a href="#">Test</a></i>
+			<i class="logo icon-adobe"><a href="#">Test</a></i>
+			<i class="logo icon-facebook"><a href="#">Test</a></i>
+			<i class="logo icon-twitter"><a href="#">Test</a></i>
+		</div>
 	</div>
 </footer>
