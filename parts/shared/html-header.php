@@ -10,7 +10,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta content="HIKE is a conference for designers looking for insight, honest answers, and solid solutions to become a professional" name="description">
+	<meta content="HIKE, Hikecon, Hike Conference, Chicago Illinois, San Francisco California" name="keywords">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
